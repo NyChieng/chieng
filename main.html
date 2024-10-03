@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/enhancement.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="./style/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="main.html"><img src="./style/images/logo.png" alt="Logo"></a>  
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label class="menu-icon" for="menu-toggle">&#9776;</label>
+        <nav class="navbar">
+            <ul>
+                <div class="dropdown">
+                    <img src="./style/images/login.png" id="login_logo">
+                    <div class="dropdown-content">
+                      <form>
+                             <label for="email">Email:</label>
+                             <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                             <label for="pwd">Password:</label>
+                             <input type="password" id="pwd" name="pwd" required>
+                             <input type="submit" value="Login">
+                             <p>Don't have a account?<a href="register.html"> Register now.</a></p>
+                    </div>
+                  </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+     <div class="parallax">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to the Herbaria</h1>
+                <p>Your guide to understanding the beauty and diversity of plants around the world.</p>
+                <p>What would you like to do today?</p>
+            </div>
+            <br>
+            <div class="product-categories">
+                <button class="cat_button" onclick="location.href = 'classify.html'">Classification</button>
+                <button class="cat_button" onclick="location.href = 'tutorial.html'">Tutorial</button>
+                <button class="cat_button" onclick="location.href = 'tools.html'">Tools</button>
+                <button class="cat_button" onclick="location.href = 'care.html'">Care</button>
+                <button class="cat_button" onclick="location.href = 'identify.html'">Identify</button>
+                <button class="cat_button" onclick="location.href = 'contribute.html'">Contribute</button>
+                <button class="cat_button" onclick="location.href = 'enquiry.html   '">Enquiry</button>
+            </div>
+        </section>
+    </div>
+    <!-- Divider Section -->
+    <div class="divider">
+        <h1>Informations</h1>
+    </div>
+    <div class="content_con">
+        <section class="border">
+            <h2>Classification</h2>
+        </section>
+        <section class="content_con">
+            <div class="box_container">
+                <div class="main_box">
+                  <div class="box_content">
+                    <img src="./style/images/family_icon.png" alt="family" class="profile_img">
+                    <h3>Family</h3>
+                    <p>Click the button to learn more about Family.</p>
+                    <br>
+                    <button class="button" onclick="location.href = './classify.html#family'">Learn More</button>
+                  </div>
+                </div>
+                <div class="main_box">
+                    <div class="box_content">
+                        <img src="./style/images/species-butterfly-type-class-genus-512.webp" alt="genus" class="profile_img">
+                        <h3>Genus</h3>
+                        <p>Click the button to learn more about Genus.</p>
+                        <br>
+                        <button class="button" onclick="location.href = './classify.html#genus'">Learn More</button>
+                    </div>
+                </div>
+                <div class="main_box">
+                    <div class="box_content">
+                        <img src="./style/images/species.png" alt="care" class="profile_img">
+                        <h3>Species</h3>
+                        <p>Click the button to learn more about Family.</p>
+                        <br>
+                        <button class="button" onclick="location.href = './classify.html#species'">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box_container">
+                <div class="zoom_box">
+                    <div class="mbox_front">
+                        <img src="./style/images/shorea_faguetiana.jpg" class="front_img" alt="shorea_faguetiana">
+                    </div>
+                    <br><br><br>
+                    <div class="zoom_box_content">
+                        <h3>Dipterocarpaceae</h3>
+                        <button class="button" onclick="location.href = './classify.html#dipterocarpaceae'">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="zoom_box">
+                    <div class="mbox_front">
+                        <img src="./style/images/endiandra_bullata.jpg" class="front_img" alt="endiandra-bullata">
+                    </div>
+                    <br><br><br>
+                    <div class="zoom_box_content">
+                        <h3>Lauraceae</h3>
+                        <button class="button" onclick="location.href = './classify.html#lauraceae'">Learn More</button>
+                    </div>
+                </div>
+                <div class="zoom_box">
+                    <div class="mbox_front">
+                        <img src="./style/images/canarium_australasicum.jpg" alt="canarium_australasicum" class="front_img">
+                    </div>
+                    <br><br><br>
+                    <div class="zoom_box_content">
+                        <h3>Burseraceae</h3>
+                        <button class="button" onclick="location.href = './classify.html#burseraceae'">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!-- Content Container -->
+    <div class="content_con">
+        <section class="border">
+            <h2>Here below are other information:</h2>
+        </section>
+        <div class="content_con">
+            <div class="box_container">
+                <div class="main_box">
+                <div class="box_content">
+                    <img src="./style/images/tutorial.png" alt="tutorial" class="profile_img">
+                    <h3>Tutorial</h3>
+                    <p>A guide on how to transfer a fresh leaf into herbarium specimens.</p>
+                    <br>
+                    <button class="button" onclick="location.href = '#'">Learn More</button>
+                    </div>
+                </div>
+                <div class="main_box">
+                    <div class="box_content">
+                        <img src="./style/images/tools.png" alt="tools" class="profile_img">
+                        <h3>Tools</h3>
+                        <p>Information on the tools used to create herbarium specimens.</p>
+                        <br>
+                        <button class="button" onclick="location.href = '#'">Learn More</button>
+                    </div>
+                </div>
+                <div class="main_box">
+                    <div class="box_content">
+                        <img src="./style/images/care.png" alt="care" class="profile_img">
+                        <h3>Care</h3>
+                        <p>Information on how to preserve the herbarium.</p>
+                        <br>
+                        <button class="button" onclick="location.href = '#'">Learn More</button>
+                    </div>
+                </div>
+                <div class="main_box">
+                    <div class="box_content">
+                        <img src="./style/images/identify.png" alt="indentify" class="profile_img">
+                        <h3>Identify</h3>
+                        <p>Steps to identify a plant's family and genus.</p>
+                        <br>
+                        <button class="button" onclick="location.href = '#'">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider">
+        <h1>Our Services</h1>
+    </div>
+    <div class="content_con">
+        <section class="border">
+          <h2>Here below are some services we provide:</h2>
+        </section>
+        <section class="other_resources">
+        <div class="box_container">
+            <div class="main_box">
+                <div class="box_content">
+                    <img src="./style/images/contribute.png" alt="placeholder" class="profile_img">
+                    <h3>Contribution</h3>
+                    <p>A form to contribute plants into our website.</p>
+                    <br>
+                    <button class="button" onclick="location.href = '#'">Learn More</button>
+                </div>
+            </div>
+            <div class="main_box">
+                <div class="box_content">
+                    <img src="./style/images/enquiry.png" alt="placeholder" class="profile_img">
+                    <h3>Enquiry</h3>
+                    <p>Any questions? Feel free to ask us through a form.</p>
+                    <br>
+                    <button class="button" onclick="location.href = '#'">Learn More</button>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+    </section>
+    <section id="about_us">
+        <div class="divider">
+            <h1>About Us</h1>
+        </div>
+        <div class="content_con">
+            <section class="border">
+              <h2>The Team</h2>
+            </section>
+            <section class="other_resources">
+            <div class="box_container">
+                <div class="abtus_box">
+                  <div class="abtus_content">
+                      <h3>ELIJAH BENJAMIN TAN</h3>
+                      <img src="./style/images/placeholder_sample_image.png" alt="placeholder"  class="profile_img">
+                      <p>The First Man behind the team</p>
+                      <button class="button" onclick="location.href = '#'">Learn More</button>
+                  </div>
+                </div>
+                <div class="abtus_box">
+                    <div class="abtus_content">
+                        <h3>IVAN LIANG JIN NGU</h3>
+                        <img src="./style/images/placeholder_sample_image.png" alt="placeholder"  class="profile_img">
+                        <p>The Second Man behind the team</p>
+                        <button class="button" onclick="location.href = '#'">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="abtus_box">
+                    <div class="abtus_content">
+                        <h3>NENG YI CHIENG</h3>
+                        <img src="./style/images/placeholder_sample_image.png" alt="placeholder"  class="profile_img">
+                        <p>The Third Man behind the team</p>
+                        <button class="button" onclick="location.href = '#'">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="abtus_box">
+                    <div class="abtus_content">
+                        <h3>JACK THE PIRATE</h3>
+                        <img src="./style/images/placeholder_sample_image.png" alt="placeholder"  class="profile_img">
+                        <p>The Forth Man behind the team</p>
+                        <button class="button" onclick="location.href = '#'">Learn More</button>
+                    </div>
+                  </div>
+            </div>
+            </section>
+        </div>
+        </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <h2 class="ft-title">Navigate</h2>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Dipterocarpaceae</h2>
+                <ul>
+                    <li><a href="">placeholder</a></li>
+                    <li><a href="">placeholder</a></li>
+                    <li><a href="">placeholder</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Lauraceae</h2>
+                <ul>
+                    <li><a href="">placeholder</a></li>
+                    <li><a href="">placeholder</a></li>
+                    <li><a href="">placeholder</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Burseraceae</h2>
+                <ul>
+                    <li><a href="">placeholder</a></li>
+                    <li><a href="">placeholder</a></li>
+                    <li><a href="">placeholder</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title"><a href="">About Us</a></h2>
+                <ul>
+                    <li><a href="">The Team</a></li>
+                    <li><a href="">Our Vision</a></li>
+                    <li><a href="">Feedback</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

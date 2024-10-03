@@ -1,0 +1,260 @@
+/* Dropdown login button */
+.dropbtn {
+    background-color: #2b4b2f;
+    font-family: 'Poppins';
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ccc;
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-content label {
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dropdown-content input {
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #F0EAD6;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content input[type="submit"] {
+    background-color: #2b4b2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .dropdown-content p {
+    color: #000000;
+    margin-top: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: #2b4b2f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .dropdown-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  
+  /* register page styles */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(1024px - 60px); 
+    background-color: #F0EAD6; 
+  }
+  
+  .register-form {
+    background-color: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-form h1 {
+    color: #3B5E3A;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+  }
+  
+  .form-group input {
+    width: 100%;
+    color: black;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 8px;
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3B5E3A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #5A8A3B;
+  }
+  
+  /* Contribute Page Styles */
+  .contribute-page {
+    background-color: #f0f8f0;
+  }
+  
+  .contribute-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .contribute-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contribute-intro h1 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .contribute-intro p {
+    color: #ffffff;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contribute-form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 40px;
+  }
+  
+  .contribute-form-container h2 {
+    color: #2b4b2f;
+    font-size: 29px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .contribute-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group.full-width {
+    width: 100%;
+  }
+  
+  .form-group label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4a4a4a;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group textarea {
+    color: #000000;
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form-group input[type="file"] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .submit-button {
+    background-color: #3B5E3A;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #5A8A3B;
+  }

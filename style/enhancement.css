@@ -1,0 +1,236 @@
+/* Zoom box and floating box in main.html */ 
+.zoom_box {
+    width: 350px;
+    height: 220px;
+    background: #FAF3E0; /* Slightly richer off-white */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 20px; /* Reduced margin for better alignment */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added shadow for stand-out effect */
+  }
+  
+  .box_container .zoom_box:hover .mbox_front {
+    top: 20px;
+    left: calc(50% - 50px);
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .box_container .zoom_box .mbox_front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  .box_container .zoom_box:hover .mbox_front img {
+    border-radius: 20px;
+  }
+  
+  .zoom_box_content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: Poppins;
+  }
+
+  .zoom_box_content h3 {
+    color: #4A3C31; /* Darker text color for better contrast */
+    font-size: 28px;
+    text-align: center;
+  }
+
+.main_box, .zoom_box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.main_box:hover, .zoom_box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+
+/* Fade imgaes in classify.html */
+.fade_container {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .fade_image {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .fade_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 95%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 20px;
+    background-color: #2b4b2f;
+  }
+  
+  .fade_container:hover .fade_overlay {
+    opacity: 1;
+  }
+  
+  .fade_text a{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Starting here is the style for flip cards */
+  
+  .flip_box_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Increased space between each box */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .class_flip {
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .class_flip_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .class_flip:hover .class_flip_inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .class_flip_front, .class_flip_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .class_flip_front{
+    background-color: #bbb;
+    color: black;
+    border-radius: 15px 50px;
+  }
+  
+  /* Style the back side */
+  .class_flip_back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 15px 50px;
+  }
+  
+  .class_flip_front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 50px;
+  }
+  
+  /* The end of Flip Cards */
+
+  .flip_row_2{
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    padding-top: 20px;
+    margin-right: 50px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip_row_2_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip_row_2:hover .flip_row_2_inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip_row_2_front, .flip_row_2_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip_row_2_front{
+    background-color: #bbb;
+    color: black;
+    border-radius: 15px 50px;
+  }
+  
+  /* Style the back side */
+  .flip_row_2_back {
+    background-color: #3B5E3A;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 15px 50px;
+    padding: 20px;
+  }
+  
+  .flip_row_2_front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 50px;
+  }
+  
+  .flip_row_2_back h3{
+    padding: 10px;
+  }
+  
+  /* Tutorial end */
+
+
+  

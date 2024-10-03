@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CWA Help Desk Appointment Form">
+    <meta name="keywords" content="Help Desk, Appointment, Form">
+    <meta name="author" content="Ivan Ngu">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="./style/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html"><img src="./style/images/logo.png" alt="Logo"></a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label class="menu-icon" for="menu-toggle">&#9776;</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="classify.html">Classification</a></li>
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <div class="dropdown-nav">
+                        <a href="tutorial.html">Tutorial</a>
+                        <a href="tools.html">Tools</a>
+                        <a href="care.html">Care</a>
+                        <a href="#">Identify</a>
+                    </div>
+                </li>
+                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register-container">
+        <section class="register-form">
+            <h1>Register</h1>
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="JACK" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="PIRATE" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="pwd" required>
+                </div>
+                <button type="submit" class="register-button">Confrim</button>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
